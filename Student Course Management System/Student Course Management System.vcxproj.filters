@@ -83,8 +83,8 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
     <None Include="..\.gitignore" />
+    <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="User.h">
