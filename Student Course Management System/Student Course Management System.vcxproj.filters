@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src\models">
+      <UniqueIdentifier>{636f1d16-54c0-4952-81df-97471e07da85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\repositories">
+      <UniqueIdentifier>{e2ba1e48-8179-49ea-bed3-7dd02d5565bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\services">
+      <UniqueIdentifier>{882b5c45-1e13-47a9-bcd3-a5048bc5e2fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\storage">
+      <UniqueIdentifier>{a94c6e50-fd41-4870-9cbd-c410c524c3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\storage">
+      <UniqueIdentifier>{c95b55a9-9c5f-47a3-a820-68fcd3d41ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\services">
+      <UniqueIdentifier>{627d9849-0501-4c1c-9e56-e709db8fa2d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\models">
+      <UniqueIdentifier>{5acb284f-6a7b-424a-9a31-827769817f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\repositories">
+      <UniqueIdentifier>{a8d91969-dcc0-4693-9eb3-acf27952824c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ui">
+      <UniqueIdentifier>{a97f33c8-c1e6-4c59-87e4-fd306e5cba03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{b1fde8e0-05a8-454a-a46f-1e6326e3c317}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>src\models</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>src\models</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentRepository.cpp">
+      <Filter>src\repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>src\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentService.cpp">
+      <Filter>src\services</Filter>
+    </ClCompile>
+    <ClCompile Include="Course.cpp">
+      <Filter>src\models</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleUI.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="CourseRepository.cpp">
+      <Filter>src\repositories</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+    <Text Include="students.txt">
+      <Filter>data</Filter>
+    </Text>
+    <Text Include="course.txt">
+      <Filter>data</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="..\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="User.h">
+      <Filter>include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentRepository.h">
+      <Filter>include\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>include\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentService.h">
+      <Filter>include\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Course.h">
+      <Filter>include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleUI.h">
+      <Filter>include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="CourseRepository.h">
+      <Filter>include\repositories</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -44,3 +44,5 @@ bin/
 *.VC.VC.opendb
 *.suo
 *.user
+
+.vs/
