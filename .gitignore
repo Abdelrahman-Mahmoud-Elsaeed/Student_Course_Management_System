@@ -1,0 +1,46 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Directories created by build systems
+# for example, a common 'build' directory
+build/
+bin/
+
+# IDE/Editor specific files (adjust as needed)
+.vscode/       # Visual Studio Code
+.idea/         # JetBrains IDEs (CLion, etc.)
+*.aps          # Visual Studio
+*.ncb
+*.opendb
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
