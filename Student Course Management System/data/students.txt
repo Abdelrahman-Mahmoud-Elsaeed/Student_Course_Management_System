@@ -1,2 +1,1 @@
-1001|Ahmed Ali|20|Male|ahmed@edu.com|01012345678|2|Computer Science|4|CS101,MATH201
-1002|Sara Khan|21|Female|sara@edu.com|01198765432|3|Engineering|3.5|MATH201
+15|asfdsd|0||||0||4|

@@ -1,5 +1,6 @@
 #include "Student.h"
 #include <iostream>
+#include <sstream>
 
 Student::Student(const std::string& name, int age, int id, const std::string& gender,
     const std::string& phone,
@@ -7,7 +8,7 @@ Student::Student(const std::string& name, int age, int id, const std::string& ge
     int level,
     const std::string& major,
     double gpa,
-    const std::vector<std::string>& courses)
+    const std::set<std::string>& courses)
     : User(name, age, id, gender, phone, email),
     _level(level),
     _major(major),
@@ -17,45 +18,34 @@ Student::Student(const std::string& name, int age, int id, const std::string& ge
 }
 
 void Student::enrollCourse(const std::string& course) {
-    _courses.push_back(course);
-};
+    _courses.insert(course);
+}
 
 void Student::dropCourse(const std::string& course) {
-    for (auto it = _courses.begin(); it != _courses.end(); ++it) {
-        if (*it == course) {
-            _courses.erase(it);
-            break;
-        }
-    }
+    _courses.erase(course);
 }
 
 void Student::displayCourses() const {
-    for (size_t i = 0; i < _courses.size(); i++)
-    {
-        std::cout << _courses[i] << " ";
+    for (const auto& course : _courses) {
+        std::cout << course << " ";
     }
     std::cout << "\n";
-};
+}
 
-void Student::display() const  {
+void Student::display() const {
     User::display();
     std::cout
         << "Year: " << _level << "\n"
         << "Major: " << _major << "\n"
-        << "GPA: " << _gpa << "\n";
+        << "GPA: " << _gpa << "\nEnrolled Courses: ";
     displayCourses();
-};
+}
 
-int Student::getLevel() const {
-    return _level;
-}
-std::string Student::getMajor() const {
-    return _major;
-}
-double Student::getGpa() const {
-    return _gpa;
-}
-std::vector<std::string> Student::getCourses() const {
+int Student::getLevel() const { return _level; }
+std::string Student::getMajor() const { return _major; }
+double Student::getGpa() const { return _gpa; }
+
+std::set<std::string> Student::getCourses() const {
     return _courses;
 }
 
@@ -71,14 +61,17 @@ std::string Student::toString() const {
         << _major << "|"
         << _gpa << "|";
 
-    for (size_t i = 0; i < _courses.size(); ++i) {
-        line << _courses[i];
-        if (i != _courses.size() - 1) line << ",";
+    auto it = _courses.begin();
+    while (it != _courses.end()) {
+        line << *it;
+        ++it;
+        if (it != _courses.end()) {
+            line << ",";
+        }
     }
 
     return line.str();
 }
-
 
 Student Student::fromString(const std::string& line) {
     std::istringstream iss(line);
@@ -99,12 +92,12 @@ Student Student::fromString(const std::string& line) {
     std::string major = tokens[7];
     double gpa = std::stod(tokens[8]);
 
-    std::vector<std::string> courses;
+    std::set<std::string> courses;
     if (tokens.size() > 9) {
         std::istringstream ciss(tokens[9]);
         std::string course;
         while (std::getline(ciss, course, ',')) {
-            courses.push_back(course);
+            courses.insert(course);
         }
     }
 

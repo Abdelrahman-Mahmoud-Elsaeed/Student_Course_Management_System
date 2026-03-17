@@ -130,6 +130,7 @@
     <ClCompile Include="ConsoleUI.cpp" />
     <ClCompile Include="Course.cpp" />
     <ClCompile Include="CourseRepository.cpp" />
+    <ClCompile Include="CourseService.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="main.cpp" />
@@ -139,8 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-    <Text Include="data\courses.txt" />
-    <Text Include="data\students.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />
@@ -150,6 +149,7 @@
     <ClInclude Include="ConsoleUI.h" />
     <ClInclude Include="Course.h" />
     <ClInclude Include="CourseRepository.h" />
+    <ClInclude Include="CourseService.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="Student.h" />

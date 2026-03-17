@@ -72,15 +72,12 @@
     <ClCompile Include="CourseRepository.cpp">
       <Filter>src\repositories</Filter>
     </ClCompile>
+    <ClCompile Include="CourseService.cpp">
+      <Filter>src\services</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-    <Text Include="data\courses.txt">
-      <Filter>data</Filter>
-    </Text>
-    <Text Include="data\students.txt">
-      <Filter>data</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />
@@ -110,6 +107,9 @@
     </ClInclude>
     <ClInclude Include="FileManager.h">
       <Filter>include\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="CourseService.h">
+      <Filter>include\services</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

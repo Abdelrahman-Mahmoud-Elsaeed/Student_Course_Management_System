@@ -1,7 +1,8 @@
 #pragma once
 #include "User.h"
-#include <vector>
 #include <sstream>
+#include <set>
+#include <vector>
 
 class Student : public User
 {
@@ -9,7 +10,7 @@ private:
 	int _level;
 	std::string _major;
 	double _gpa;
-	std::vector<std::string> _courses;
+    std::set<std::string> _courses;
 public:
     Student(const std::string& name, int age, int id, const std::string& gender,
         const std::string& phone,
@@ -17,7 +18,7 @@ public:
         int level,
         const std::string& major,
         double gpa,
-        const std::vector<std::string>& courses);
+        const std::set<std::string>& courses);
 
     std::string toString() const;
 
@@ -30,5 +31,5 @@ public:
     int getLevel() const;
     std::string getMajor() const;
     double getGpa() const;
-    std::vector<std::string> getCourses() const;
+    std::set<std::string> getCourses() const;
 };
