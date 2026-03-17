@@ -13,6 +13,9 @@ public:
     std::string getCourseCode() const;
     std::string getCourseName() const;
 
+    std::string toString() const;
+    static Course fromString(const std::string& line);
+
     bool operator<(const Course& other) const;
 
     bool operator==(const Course& other) const;

@@ -139,8 +139,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-    <Text Include="course.txt" />
-    <Text Include="students.txt" />
+    <Text Include="data\courses.txt" />
+    <Text Include="data\students.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />

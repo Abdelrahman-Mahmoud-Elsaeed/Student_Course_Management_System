@@ -75,10 +75,10 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-    <Text Include="students.txt">
+    <Text Include="data\courses.txt">
       <Filter>data</Filter>
     </Text>
-    <Text Include="course.txt">
+    <Text Include="data\students.txt">
       <Filter>data</Filter>
     </Text>
   </ItemGroup>
@@ -96,9 +96,6 @@
     <ClInclude Include="StudentRepository.h">
       <Filter>include\repositories</Filter>
     </ClInclude>
-    <ClInclude Include="FileManager.h">
-      <Filter>include\storage</Filter>
-    </ClInclude>
     <ClInclude Include="StudentService.h">
       <Filter>include\services</Filter>
     </ClInclude>
@@ -110,6 +107,9 @@
     </ClInclude>
     <ClInclude Include="CourseRepository.h">
       <Filter>include\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>include\storage</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -8,16 +8,16 @@
 
 
 
-class StudentsRepo {
+class StudentRepository {
 private:
-    std::string filePath;
+    std::string filePath = "./data/students.txt";
     FileManager fileManager;
 
 public:
-    StudentsRepo(const std::string& path);
+    StudentRepository();
 
     std::optional<Student> getStudent(size_t index) const;
-    std::vector<Student> getAllStudents() const;
+    std::optional< std::vector<Student> > getAllStudents() const;
 
     void addStudent(const Student& student);
     void updateStudent(size_t index, const Student& student);
